@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Danh Sách Token</h1>
+    </div>
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">danh sách token đã thêm vào hệ thống</div>
+            <div class="panel-body">
+                <div class="form-group text-right">
+                    Có tổng cộng <span id="all-token-count">0</span> Token đã thêm vào hệ thống.
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th style="width:3%" class="text-vertical text-center">No</th>
+                            <th style="width:10%" class="text-vertical text-center">Access Key</th>
+                            <th class="text-vertical text-center">Name</th>
+                            <th class="text-vertical text-center">Type</th>
+                            <th class="text-vertical text-center">ID</th>
+                            <th style="width:10%" class="text-vertical text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="list-token">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $('.table').DataTable();
+    getListToken();
+    no = 0;
+</script>

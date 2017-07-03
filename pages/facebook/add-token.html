@@ -1,0 +1,98 @@
+<div class="row">
+    <div class="col-lg-12">
+        <h1 class="page-header">Add Token</h1>
+    </div>
+    <div class="col-lg-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">Thêm token vào hệ thống</div>
+            <div class="panel-body">
+                <div class="col-lg-6">
+                    <div class="form-group">
+                        <textarea id="token-input" class="form-control" style="height: 110px;"
+                                  placeholder="1 token 1 dòng"></textarea>
+                    </div>
+                    <div class="form-group text-center">
+                        <button class="btn btn-sm btn-primary" id="token-get-info">GET INFO</button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <p><code>-</code> Nhập danh sách token cần đưa vào hệ thống.</p>
+                    <p><code>-</code> Hệ thống sẽ tự động phân loại token theo 3 loại.</p>
+                    <p><code>Loại 1</code>: Những token nào đang hoạt động và không có fanpage.</p>
+                    <p><code>Loại 2</code>: Những token nào đang hoạt động và có fanpage.</p>
+                    <p><code>Loại 3</code>: Những token nào đang hoạt động và là fanpage.</p>
+                    <p><code>-</code> Sau khi phân loại token xong, bạn cần nhấn button Lưu tất cả để lưu.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">Token không có page</div>
+            <div class="panel-body">
+                <div class="form-group text-right">
+                    <span>Tổng cộng có <span id="token-account-count" class="text-danger">0</span> token</span>
+                    <button class="btn btn-sm btn-success add-all" data-selector="#token-account">Lưu tất cả</button>
+
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th style="width:8%" class="text-vertical text-center">No</th>
+                        <th class="text-vertical text-center">Name</th>
+                        <th style="width:8%" class="text-vertical text-center">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody id="token-account">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">Token có page</div>
+            <div class="panel-body">
+                <div class="form-group text-right">
+                    <span>Tổng cộng có <span id="token-account-page-count" class="text-danger">0</span> token</span>
+                    <button class="btn btn-sm btn-success add-all" data-selector="#token-account-page">Lưu tất cả
+                    </button>
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th style="width:8%" class="text-vertical text-center">No</th>
+                        <th class="text-vertical text-center">Name</th>
+                        <th style="width:8%" class="text-vertical text-center">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody id="token-account-page">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4">
+        <div class="panel panel-default">
+            <div class="panel-heading">Token page</div>
+            <div class="panel-body">
+                <div class="form-group text-right">
+                    <span>Tổng cộng có <span id="token-page-count" class="text-danger">0</span> token</span>
+                    <button class="btn btn-sm btn-success add-all" data-selector="#token-page">Lưu tất cả</button>
+                </div>
+                <table class="table table-bordered">
+                    <thead>
+                    <tr>
+                        <th style="width:8%" class="text-vertical text-center">No</th>
+                        <th class="text-vertical text-center">Name</th>
+                        <th style="width:8%" class="text-vertical text-center">Action</th>
+                    </tr>
+                    </thead>
+                    <tbody id="token-page">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- /.row -->
