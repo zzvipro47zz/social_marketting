@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - fyws@127.0.0.1" uuid="cea37213-0185-41f7-8c97-00ad261e6a7d">
+      <database-info product="MySQL" version="5.1.37-community" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-scope>fyws:</introspection-scope>
+      <resolve-scope>fyws:</resolve-scope>
+    </data-source>
+    <data-source name="MySQL - account@127.0.0.1" uuid="2d81908b-86bf-4f57-9c31-112c76ed2cab">
+      <database-info product="MySQL" version="5.1.37-community" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.40 ( Revision: 402933ef52cad9aa82624e80acbea46e3a701ce6 )">
+        <extra-name-characters>#@</extra-name-characters>
+        <identifier-quote-string>`</identifier-quote-string>
+      </database-info>
+      <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-scope>account:</introspection-scope>
+      <resolve-scope>account:</resolve-scope>
+    </data-source>
+  </component>
+</project>
